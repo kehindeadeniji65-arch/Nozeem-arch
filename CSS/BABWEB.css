@@ -10,92 +10,97 @@ body {
 }
 header {
   background: rgb(26, 26, 112);
-  height: 40px;
+  height: 35px;
+  position: relative;
 }
-header ul {
+header .top-head{
+  margin: 7px 0 0 70px;
+  display: inline-flex;
+}
+header .top-head .follow a{
+  color: #1a097c;
+  font-size: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 5px;
+  background: hsla(240, 39%, 91%, 0.47);
+}
+header .top-head .fabjust .fab{
+  margin: 0 2px 0 2px;
+  font-size: 12px;
+}
+header .top-head .fabjust{
+  color: hsla(240, 39%, 91%, 0.47);
+  margin: 0 0 0 20px;
+}
+header .list{
+  display: inline-block;
+  margin: 12px 40px 0 20px;
+  position: absolute;
+  right: 0;
+}
+header .list .list-item ul{
   font-size: 10px;
   list-style-type: none;
 }
-header ul li {
+header .list .list-item li {
   color: white;
-  margin-right: 45px;
-  margin-top: 12px;
+  margin: 0 15px 0 0;
   float: left;
 }
 
-header ul .alone {
-  margin-left: 100px;
+header .list .fa{
+  margin-right: 5px;
 }
-header ul .alone a{
-  text-decoration: none;
-  margin: 5px;
-  padding: 6px 20px;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.486);
-  color: rgb(19, 19, 78);
-}
-header ul .alone .fab{
-  margin: 0 3px 0 3px;
-  color: rgb(174, 173, 172);
-}
-header li a:hover {
-  color: white;
-  background: transparent;
-}
+
 .header2 {
-  display: inline-block;
+  display: flex;
   position: sticky;
   top: 0;
-  width: 100%;
-  background: white;
+  background: rgb(255, 255, 255);
   z-index: 99999;
+  justify-content: space-between;
+}
+.header2 .menu {
+  margin: 0 100px 0 0;
 }
 .header2 .img {
-  margin: 10px;
-  margin-left: 120px;
+  margin:  7px 0 3px 0;
+  margin-left: 70px;
 }
-.menu {
-  /* display: inline-block; */
-  float: right;
-  height: 40px;
-  margin-top: -55px;
-}
-.menu .hamburg-right .fa{
+.header2 ul .fa{
   display: none;
-  margin: 11px 50px 0 0;
   color: black;
-  font-size: 22px;
+  font-size: 23px;
+  background: #b1b4b949;
+  padding: 5px 8px;
+  border-radius: 3px;
 } 
-.menu .hamburg-right.fa{
-  margin-bottom: 20px;
-}
-.menu ul {
-  font-size: 12px;
+.header2 .menu ul {
+  font-size: 14px;
   list-style-type: none;
-  margin-right: 160px;
+  margin: 18px 0 0 0;
 }
-.menu ul li {
-  margin: 10px 0 0 0;
-  width: 15%;
+.header2 .menu ul li {
   color: rgb(22, 8, 8);
+  float: left;
 }
-.menu ul li a {
+.header2 .menu ul li a {
   text-decoration: none;
-  margin: 5px;
   padding: 5px 10px;
-  border-radius: 8px;
   background: none;
   color: black;
 }
 .menu ul li a:hover:not(.active, .hover2) {
   color: red;
 }
-.menu ul li .active {
+.menu ul li a.active {
   color: rgb(175, 25, 25);
   background: rgba(128, 90, 90, 0.178);
   border-radius: 13px;
 }
-.menu ul li .hover2 {
+.menu ul li a.hover2 {
   padding: 7px 18px;
   margin: 15px;
   margin-left: 30px;
@@ -207,10 +212,11 @@ header li a:hover {
 }
 .flex-table h3{
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: autography;
   padding: 10px;
   line-height: 2;
   margin-bottom: 20px;
+  font-size: 25px;
 }
 .flex-table .box{
   margin: 3px 0 3px 0;
@@ -404,6 +410,7 @@ header li a:hover {
 }
 .boxrow label h5{
      margin: 34px 0 0 5px;
+     color: black;
 }
 .boxrow button{
   color: rgb(100, 21, 21);
@@ -508,27 +515,36 @@ hr{
 .copyr{
   display: flex;
   height: 90px;
-  background: rgb(15, 35, 73);
+  background: rgb(22, 6, 112);
   color: white;
   justify-content: space-between;
 }
 .copyr .noz .fa{
-  margin-right: 10px;
+  margin-right: 5px;
 }
-.copyr .fab{
-  margin: 10px;
-}
-.copyr>div{
+.copyr .fablas{
   margin: 40px;
 }
+.copyr .fab{
+  margin: 0 10px 0 10px;
+}
+.copyr .noz{
+  margin: 40px;
+}
+
 @media only screen and (max-width: 600px) {
 
-header ul .alone {
-  margin-left: 25px;
+header .top-head{
+  margin: 0 0 0 30px;
+  display: flex;
+  justify-content: space-between;
 }
-header ul .alone a{
-  padding: 5px 10px;
-  margin-right: 185px;
+header .top-head .fabjust{
+  color: hsla(240, 39%, 91%, 0.47);
+  margin: 5px 20px 0 0;
+}
+header .top-head .follow{
+  margin: 5px 0 0 0;
 }
 header .hamburg{
   display: none;
@@ -539,12 +555,16 @@ header .hamburg{
 .menu ul li{
   display: none;
 }
-.menu .hamburg-right .fa{
+.header2 .menu {
+  margin: 0 23px 0 0;
+}
+.header2 ul .fa{
   display: block;
-  margin: 4px 20px 0 0;
-  border-radius: 4px;
-  background: rgba(243, 242, 240, 0.808);
-  padding: 10px 15px;
+  color: black;
+  font-size: 22px;
+} 
+.header2 .menu ul {
+  margin: 11px 0 0 0;
 }
 .explore .shaping{
   margin: 50px 0 0 20px;
@@ -614,7 +634,7 @@ header .hamburg{
   padding-left: 0;
 }
 .hero2{
-  height: 90vh;
+  height: 130vh;
 }
 .hero2 .why-me{
   font-size: 20px;
@@ -660,14 +680,14 @@ header .hamburg{
 }
 .overlay2 .flex-right h2{
   font-size: 32px;
-  margin: 70px 0 30px 20px;
+  margin: 45px 0 20px 20px;
 }
 .overlay2 .flex-right ul{
   margin: 10px 0 0 5px;
-  font-size: 16px;
+  font-size: 12px;
 }
 .overlay2 .flex-right ul li{
-  margin: 0 25px 35px 25px
+  margin: 0 25px 12px 25px
 }
 .hero3 .event{
   margin: 140px 0 0 20px;
@@ -679,7 +699,7 @@ header .hamburg{
   margin: 10px 0 0 18px;
 }
 .hero3{
-  height: 260vh;
+  height: 380vh;
 }
 .boxrow{
   margin-top: 20px;
@@ -725,7 +745,34 @@ header .hamburg{
 }
 .copyr{
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+}
+.copyr .fablas{
+  margin: 0 0 20px 12px;
+}
+.copyr .fab{
+  margin: 0 10px 0 10px;
+}
+.copyr .noz{
+  margin: 20px 20px 0 20px;
+}
 }
 
+@media only screen and (max-width: 500px){
+  .hero3{
+  height: 400vh;
+}
+}
+
+@media only screen and (max-width: 400px){
+  .hero3{
+  height: 470vh;
+}
+.boxrow button{
+  padding: 5px 10px;
+  margin: 0 0 0 4px;
+}
+.boxrow label h5{
+font-size: 10px;
+}
 }
