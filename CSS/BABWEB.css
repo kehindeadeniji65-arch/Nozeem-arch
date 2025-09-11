@@ -61,6 +61,7 @@ header .list .fa{
   background: rgb(255, 255, 255);
   z-index: 99999;
   justify-content: space-between;
+  /* box-shadow: 2px .5px 2px 2px rgba(95, 94, 94, 0.447); */
 }
 .header2 .menu {
   margin: 0 100px 0 0;
@@ -73,7 +74,7 @@ header .list .fa{
   display: none;
   color: black;
   font-size: 23px;
-  background: #b1b4b949;
+  background: #eaf2fd;
   padding: 5px 8px;
   border-radius: 3px;
 } 
@@ -115,46 +116,53 @@ header .list .fa{
 .hero {
   background-image: url("../IMAGE/bak.jpg");
   background-size: cover;
-  height: 100vh;
+  height: 84vh;
   position: relative;
   background-position: center;
+  
 }
 .overlay {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.724);
   width: 100%;
-  height: 100vh;
+  height: 84vh;
   top: 0;
 }
 .explore {
-  width: 100%;
-  position: relative;
+  display: block;
+  margin: 120px 0 0 0;
 }
 .explore .shaping{
-  margin: 90px 0 0 70px;
+  margin: 0 0 0 70px;
   font-size: 30px;
   color: white;
 }
 .explore .shaping h4{
-  margin-top: 5px;
+  margin-top: 15px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
 }
 .explore .form {
-  display: inline-flex;
+  display: flex;
+  width: 46%;
   border: 1px solid white;
   border-radius: 5px;
   margin: 60px 0 0 70px;
+  flex-wrap: wra;
 }
-.explore select,button {
-  margin: 10px;
+.explore select{
+  margin: 10px 5px 10px 10px;
   border-radius: 5px;
-  padding: 10px 50px;
+  padding: 10px 0;
+  width: 45%;
 }
 .explore button {
+  width: 48%;
+  margin: 10px 5px 10px 10px;
+  border-radius: 5px;
   color: white;
   background: red;
-  padding: 5px 100px;
+  padding: 10px 0;
   border: none;
 }
 .explore button:hover {
@@ -532,7 +540,7 @@ hr{
   margin: 40px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
 
 header .top-head{
   margin: 0 0 0 30px;
@@ -562,36 +570,57 @@ header .hamburg{
   display: block;
   color: black;
   font-size: 22px;
+  outline: .2px solid rgba(197, 190, 190, 0.632);
 } 
 .header2 .menu ul {
   margin: 11px 0 0 0;
+}
+.hero {
+  background-image: url("../IMAGE/bak.jpg");
+  background-size: cover;
+  height: 68vh;
+  position: relative;
+  background-position: center;
+}
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.724);
+  width: 100%;
+  height: 68vh;
+  top: 0;
+}
+.explore {
+  margin: 100px 0 0 0;
 }
 .explore .shaping{
   margin: 50px 0 0 20px;
   font-size: 30px;
   color: white;
 }
+.explore .shaping h1{
+  line-height: .9;
+}
 .explore .shaping h4{
-  margin-top: 5px;
+  margin-top: 20px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
 }
 .explore .form {
-  margin: 60px 0 0 10px;
-}
-.explore select,button {
-  margin: 8px;
-  border-radius: 5px;
-  padding: 10px 1px;
+  width: 80%;
+  margin: 50px 0 0 20px;
 }
 .explore select{
-  width: 45%;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 60%;
 }
 .explore button {
+  margin: 10px;
   color: white;
   background: red;
-  padding: 5px 53px;
-  border: none;
+  padding: 10px;
+  width: 58%;
 }
 .float{
   display: flex;
@@ -633,8 +662,12 @@ header .hamburg{
 .flex-table h3{
   padding-left: 0;
 }
+.flex-table .box img{
+  padding: 0 12px;
+  border-radius: 10px;
+}
 .hero2{
-  height: 130vh;
+  height: 100vh;
 }
 .hero2 .why-me{
   font-size: 20px;
@@ -671,6 +704,7 @@ header .hamburg{
 }
 .background{
   justify-content: flex-start;
+  height: 80vh;
 }
 .background .overlay2{
   display: inline-block;
@@ -699,7 +733,7 @@ header .hamburg{
   margin: 10px 0 0 18px;
 }
 .hero3{
-  height: 380vh;
+  height: 300vh;
 }
 .boxrow{
   margin-top: 20px;
@@ -743,6 +777,9 @@ header .hamburg{
   height: 390px;
   object-fit: cover;
 }
+.comp .apply2{
+  margin: 0 27px 0 20px;
+}
 .copyr{
   display: flex;
   flex-direction: column;
@@ -755,24 +792,5 @@ header .hamburg{
 }
 .copyr .noz{
   margin: 20px 20px 0 20px;
-}
-}
-
-@media only screen and (max-width: 500px){
-  .hero3{
-  height: 400vh;
-}
-}
-
-@media only screen and (max-width: 400px){
-  .hero3{
-  height: 470vh;
-}
-.boxrow button{
-  padding: 5px 10px;
-  margin: 0 0 0 4px;
-}
-.boxrow label h5{
-font-size: 10px;
 }
 }
