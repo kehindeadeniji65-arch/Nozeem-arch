@@ -44,8 +44,9 @@
     <div class="img"><img src="IMAGE/zbab2.png" width="100px" height="auto" /></div>
 
     <div class="menu">
-      <ul>
-        <li><a class="active" href="#"><strong>Home</strong></a></li>
+      <ul class="leftbar">
+        <li><i onclick=hideBar() class="fa fa-close"></i></li>
+        <li><a href="#"><strong>Home</strong></a></li>
         <li>
           <a href="#"><strong>About</strong></a>
         </li>
@@ -58,7 +59,23 @@
         <li>
           <a class="hover2" href="#">Explore</a>
         </li>
-        <i class="fa fa-bars"></i>
+
+      </ul>
+       <ul class="topbar">
+      <li><a class="active" href="#"><strong>Home</strong></a></li>
+      <li>
+        <a href="#"><strong>About</strong></a>
+      </li>
+      <li>
+        <a href="#"><strong>Diploma</strong></a>
+      </li>
+      <li>
+        <a href="#"><strong>Admission</strong></a>
+      </li>
+      <li>
+        <a class="hover2" href="#">Explore</a>
+      </li>
+      <i onclick=showBar() class="fa fa-bars"></i>
       </ul>
     </div>
   </div>
@@ -84,7 +101,7 @@
         </div>
       </div>
     </div>
-  </div> 
+  </div>
 
 
   <div class="float">
@@ -147,7 +164,7 @@
   </div>
 
 
-   <div class="hero2">
+  <div class="hero2">
     <div class="why-me"><strong>Why Us</strong></div>
     <h2>Why Choose BST</h2>
 
@@ -171,7 +188,7 @@
   <div class="all-news">
     <p class="para1"><strong>All News</strong></p>
     <p class="para2"><strong>News</strong></p>
-  </div> 
+  </div>
 
   <div class="background">
     <div class="overlay2">
@@ -266,7 +283,7 @@
         <button type="button">READ MORE</button>
       </div>
     </div>
-  </div> 
+  </div>
 
   <div class="apply">
     <h3>Get Admitted</h3>
@@ -352,7 +369,7 @@
         <li>Articles</li>
       </ul>
     </div>
-  </div> 
+  </div>
 
   <div class="copyr">
     <div class="noz">
@@ -365,3 +382,6 @@
       <i class="fa-solid fa-basketball"></i>
     </div>
   </div>
+  <script src="BABWEB.js"></script>
+</body>
+</html>

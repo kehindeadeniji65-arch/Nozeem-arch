@@ -59,7 +59,7 @@ header .list .fa{
   position: sticky;
   top: 0;
   background: rgb(255, 255, 255);
-  z-index: 99999;
+  z-index: 9999;
   justify-content: space-between;
   /* box-shadow: 2px .5px 2px 2px rgba(95, 94, 94, 0.447); */
 }
@@ -70,7 +70,7 @@ header .list .fa{
   margin:  7px 0 3px 0;
   margin-left: 70px;
 }
-.header2 ul .fa{
+.header2 .topbar .fa{
   display: none;
   color: black;
   font-size: 23px;
@@ -78,30 +78,30 @@ header .list .fa{
   padding: 5px 8px;
   border-radius: 3px;
 } 
-.header2 .menu ul {
+.header2 .menu .topbar {
   font-size: 14px;
   list-style-type: none;
   margin: 18px 0 0 0;
 }
-.header2 .menu ul li {
+.header2 .menu .topbar li {
   color: rgb(22, 8, 8);
   float: left;
 }
-.header2 .menu ul li a {
+.header2 .menu .topbar li a {
   text-decoration: none;
   padding: 5px 10px;
   background: none;
   color: black;
 }
-.menu ul li a:hover:not(.active, .hover2) {
+.menu .topbar li a:hover:not(.active, .hover2) {
   color: red;
 }
-.menu ul li a.active {
+.menu .topbar li a.active {
   color: rgb(175, 25, 25);
   background: rgba(128, 90, 90, 0.178);
   border-radius: 13px;
 }
-.menu ul li a.hover2 {
+.menu .topbar li a.hover2 {
   padding: 7px 18px;
   margin: 15px;
   margin-left: 30px;
@@ -109,9 +109,45 @@ header .list .fa{
   background: rgb(9, 9, 105);
   color: white;
 }
-.menu ul li .hover2:hover {
+.menu .topbar li .hover2:hover {
   color: white;
   background: blue;
+}
+.leftbar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  background: rgb(11, 11, 66);
+  height: 100vh;
+  width: 100%;
+  list-style-type: none;
+}
+.leftbar li{
+  margin: 0 0 0 0;
+  height: 40px;
+  width: 100%;
+}
+.leftbar li a{
+  width: 100%;
+  padding: 0 40px;
+  margin: 0 0 0 0;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.leftbar li a:hover{
+  background: #b1a9a9;
+}
+.leftbar .fa{
+  margin: 4px 0 0 10px;
+  color: white;
+  font-size: 25px;
+  outline: 1px rgb(241, 238, 238);
 }
 .hero {
   background-image: url("../IMAGE/bak.jpg");
@@ -540,7 +576,7 @@ hr{
   margin: 40px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
 
 header .top-head{
   margin: 0 0 0 30px;
@@ -560,13 +596,13 @@ header .hamburg{
 .header2 .img{
   margin-left: 30px;
 }
-.menu ul li{
+.menu .topbar li{
   display: none;
 }
 .header2 .menu {
   margin: 0 23px 0 0;
 }
-.header2 ul .fa{
+.header2 .topbar .fa{
   display: block;
   color: black;
   font-size: 22px;
@@ -575,10 +611,13 @@ header .hamburg{
 .header2 .menu ul {
   margin: 11px 0 0 0;
 }
+.leftbar{
+  top: -10px;
+}
 .hero {
   background-image: url("../IMAGE/bak.jpg");
   background-size: cover;
-  height: 68vh;
+  height: 100vh;
   position: relative;
   background-position: center;
 }
@@ -586,7 +625,7 @@ header .hamburg{
   position: absolute;
   background-color: rgba(0, 0, 0, 0.724);
   width: 100%;
-  height: 68vh;
+  height: 100vh;
   top: 0;
 }
 .explore {
@@ -704,7 +743,7 @@ header .hamburg{
 }
 .background{
   justify-content: flex-start;
-  height: 80vh;
+  height: 100vh;
 }
 .background .overlay2{
   display: inline-block;
@@ -733,7 +772,7 @@ header .hamburg{
   margin: 10px 0 0 18px;
 }
 .hero3{
-  height: 300vh;
+  height: 400vh;
 }
 .boxrow{
   margin-top: 20px;
