@@ -139,13 +139,17 @@ header .list .fa{
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  border-bottom: 1px solid rgb(195, 210, 243);
+}
+.leftbar li:last-child{
+  border-bottom: none;
 }
 .leftbar li a:hover{
   background: white;
   color: rgb(11, 11, 66);
 }
 .leftbar .fa{
-  margin: 4px 0 0 10px;
+  margin: 12px 0 0 17px;
   color: white;
   font-size: 25px;
   outline: 1px rgb(241, 238, 238);
@@ -613,7 +617,7 @@ header .hamburg{
   margin: 11px 0 0 0;
 }
 .leftbar{
-  top: -10px;
+  top: -13px;
 }
 .hero {
   background-image: url("../IMAGE/bak.jpg");
