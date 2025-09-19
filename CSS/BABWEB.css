@@ -768,7 +768,7 @@ header .hamburg{
 }
 .background{
   justify-content: flex-start;
-  height: 100vh;
+  height: 70vh;
 }
 .background .overlay2{
   display: inline-block;
@@ -797,7 +797,7 @@ header .hamburg{
   margin: 10px 0 0 18px;
 }
 .hero3{
-  height: 400vh;
+  height: 270vh;
 }
 .boxrow{
   margin-top: 20px;
