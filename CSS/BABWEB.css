@@ -141,7 +141,7 @@ header .list .fa{
   text-decoration: none;
   border-bottom: 1px solid rgb(195, 210, 243);
 }
-.leftbar li:last-child{
+.leftbar li:last-child a{ 
   border-bottom: none;
 }
 .leftbar li a:hover{
@@ -467,6 +467,7 @@ header .list .fa{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   padding: 7px 15px;
   margin: 0 0 0 30px;
+  border-radius: 7px;
 }
 .boxrow button:hover{
   color: white;
