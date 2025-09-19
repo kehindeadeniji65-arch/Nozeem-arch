@@ -153,11 +153,7 @@ header .list .fa{
 .hero {
   background-image: url("../IMAGE/bak.jpg");
   background-size: cover;
-<<<<<<< HEAD
   height: 80vh;
-=======
-  height: 84vh;
->>>>>>> 98da907652e80d4b508fb449aef3f6944f0fd40b
   position: relative;
   background-position: center;
   
@@ -166,11 +162,7 @@ header .list .fa{
   position: absolute;
   background-color: rgba(0, 0, 0, 0.724);
   width: 100%;
-<<<<<<< HEAD
-  height: 80vh;
-=======
   height: 84vh;
->>>>>>> 98da907652e80d4b508fb449aef3f6944f0fd40b
   top: 0;
 }
 .explore {
